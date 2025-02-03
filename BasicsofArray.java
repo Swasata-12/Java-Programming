@@ -1,9 +1,12 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class BasicsofArray {
     public static void main(String[] args) {
         // int age[]; declaration
         // int[] age; declaration
         // age=new int[5]; memory allocation
-
+        Scanner sc = new Scanner(System.in);
         int age[] = new int[5];
         int marks[] = { 41, 46, 12, 78 };
         String names[] = { "Ram", "Harish", "Karan", "Monty" };
@@ -14,6 +17,8 @@ public class BasicsofArray {
                 { 78, 25, 100 },
                 { 85, 45, 2 }
         };
+        int rnos[] = new int[5];
+        int arr2D[][] = new int[3][3];
         int sum = 0;
         age[0] = 54;
         age[1] = 74;
@@ -27,6 +32,35 @@ public class BasicsofArray {
         System.out.println(age.length);
         System.out.println(marks.length);
         System.out.println(values[0][1]);
+
+        // Taking input in an 2D array
+        System.out.println("Give input in an 3x3 array: ");
+        for (int row = 0; row < arr2D.length; row++) {
+            for (int col = 0; col < arr2D[row].length; col++) {
+                arr2D[row][col] = sc.nextInt();
+            }
+        }
+        System.out.println("The elements in the arr2D are:");
+        for (int row = 0; row < arr2D.length; row++) {
+            for (int col = 0; col < arr2D[row].length; col++) {
+                System.out.print(arr2D[row][col]);
+                System.out.print(" ");
+            }
+            System.out.println("");
+        }
+
+        // Taking input in an array from the user
+        System.out.println("Enter the roll no of 5 students:");
+        for (int i = 0; i < rnos.length; i++) {
+            rnos[i] = sc.nextInt();
+        }
+        System.out.println("Roll nos of 5 students are:");
+        for (int i : rnos) {
+            System.out.print(i + " ");
+            System.out.println("\n");
+        }
+        System.out.println("Printing using toString() method of Arrays class:");
+        System.out.println(Arrays.toString(rnos));
 
         // printing array elements using for loop
         for (int i = 0; i < names.length; i++) {
@@ -47,7 +81,7 @@ public class BasicsofArray {
             sum += i;
         }
         System.out.println("The sum of all the elements of the array numbers is: " + sum);
-        
+
         // Iterating over a 2-D array
         for (int i = 0; i < values.length; i++) {
             for (int j = 0; j < values[i].length; j++) {
@@ -56,5 +90,6 @@ public class BasicsofArray {
             }
             System.out.println("");
         }
+        sc.close();
     }
 }

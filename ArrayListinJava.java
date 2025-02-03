@@ -3,7 +3,7 @@ import java.util.*;
 public class ArrayListinJava {
     public static void main(String[] args) {
         ArrayList<Integer> l1 = new ArrayList<>();
-        ArrayList<Integer> l2 = new ArrayList<>();
+        ArrayList<Integer> l2 = new ArrayList<>(10);
         l2.add(5);
         l2.add(1);
         l2.add(8);

@@ -29,7 +29,7 @@ public class Methods {
         int c1;
         int marks[] = { 14, 12, 45, 78, 96, 25 };
         changeArray(marks); // In case of array methods take the reference
-        System.out.println(marks[2]);
+        System.out.println(marks[2]); // Arrays are mutable in java it will change the value here as well
         c1 = logic(a1, b1);
         System.out.println(c);
         System.out.println(c1);
