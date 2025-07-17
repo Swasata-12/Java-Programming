@@ -21,6 +21,9 @@ public class StringMethods {
         System.out.println(name.lastIndexOf("ta", 5));
         System.out.println(name.equals("swasata"));
         System.out.println(name.equalsIgnoreCase("swasata"));
+        System.out.println(name.toCharArray());
+        System.out.println(name.compareTo("raman"));
+        System.out.println(name.concat("nandy"));
         sc.close();
     }
 }

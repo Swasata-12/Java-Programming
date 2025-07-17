@@ -35,9 +35,9 @@ class Cylinder1 extends Circle1 {
 public class Exercise15 {
     public static void main(String[] args) {
         Circle1 c1 = new Circle1(12);
-        Cylinder1 c2 = new Cylinder1(12, 4);
+        Cylinder1 c2 = new Cylinder1(24, 6);
         System.out.println("The Area of the Circle is:" + c1.area());
         System.out.println("The Volume of the Cylinder is:" + c2.volume());
-        // c2.area();
+        System.out.println("The Area of Circle with the radius of the Cylinder is: " + c2.area());
     }
 }

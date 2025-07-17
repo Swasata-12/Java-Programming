@@ -19,6 +19,13 @@ public class EvenDigits {
         return false;
     }
 
+    static int digits2(int num) {
+        if (num < 0) {
+            num *= -1;
+        }
+        return (int) (Math.log10(num)) + 1;
+    }
+
     static int digits(int num) {
         int count = 0;
         if (num < 0) {

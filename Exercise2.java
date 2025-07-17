@@ -35,6 +35,20 @@ public class Exercise2 {
         System.out.println("Enter your name:");
         String newName = sc.next();
         System.out.println(letter.replace("<|name|>", newName));
+
+        // Write a Java program to convert Kilometers to Miles
+        System.out.println("Enter distance in Kilometers: ");
+        double km = sc.nextFloat();
+        double ml = 0.621371 * km;
+        System.out.println("The given distance in Miles is: " + ml);
+
+        // Write a Java program to find the maximum no among three numbers
+        System.out.println("Enter Three numbers: ");
+        int a1 = sc.nextInt();
+        int b1 = sc.nextInt();
+        int c1 = sc.nextInt();
+        int maximum = Math.max(c1, Math.max(a1, b1));
+        System.out.println("The Largest number is: " + maximum);
         sc.close();
     }
 }

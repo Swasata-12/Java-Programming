@@ -10,6 +10,11 @@ public class Variables {
         String name1 = new String("Swasata");
         long value = 12;
         int value1 = (int) value; // Explicite conversion
+        byte b = 127;
+        int a = 12;
+        b = (byte) a;
+        float f = 5.6f;
+        int x = (int) f; // in x we get only 5
         System.out.println(name);
         System.out.println(name1);
         System.out.println(count);
@@ -19,5 +24,6 @@ public class Variables {
         System.out.println(studentsCount);
         System.out.println(pi);
         System.out.println(value1);
+        System.out.println("The value of x after type conversion is: " + x);
     }
 }

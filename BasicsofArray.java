@@ -10,6 +10,7 @@ public class BasicsofArray {
         int age[] = new int[5];
         int marks[] = { 41, 46, 12, 78 };
         String names[] = { "Ram", "Harish", "Karan", "Monty" };
+        String str[] = new String[5];
         int numbers[] = { 23, 14, 56, 78 };
         // int values[][] = new int[3][4]; // 2-D Array
         int values[][] = {
@@ -33,6 +34,13 @@ public class BasicsofArray {
         System.out.println(marks.length);
         System.out.println(values[0][1]);
 
+        // array of objects
+        System.out.println("Enter " + str.length + " names: ");
+        for (int i = 0; i < str.length; i++) {
+            str[i] = sc.next();
+        }
+        System.out.println(Arrays.toString(str));
+
         // Taking input in an 2D array
         System.out.println("Give input in an 3x3 array: ");
         for (int row = 0; row < arr2D.length; row++) {
@@ -47,6 +55,10 @@ public class BasicsofArray {
                 System.out.print(" ");
             }
             System.out.println("");
+        }
+        System.out.println("Printing using toString() method of Arrays class:");
+        for (int row = 0; row < arr2D.length; row++) {
+            System.out.println(Arrays.toString(arr2D[row]));
         }
 
         // Taking input in an array from the user

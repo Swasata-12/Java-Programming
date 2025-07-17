@@ -15,6 +15,10 @@ class Child extends Parent {
     public void greet() {
         System.out.println("Good Morning");
     }
+
+    public void sayBye() {
+        System.out.println("Good Bye...");
+    }
 }
 
 public class AbstractClass {
@@ -24,7 +28,9 @@ public class AbstractClass {
         Parent p = new Child();
         c.sayHello();
         c.greet();
+        c.sayBye();
         p.sayHello();
         p.greet();
+        // p.sayBye();  not allow Dynamic method dispatch
     }
 }

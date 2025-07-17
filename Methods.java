@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Methods {
     static void changeArray(int arr[]) {
         arr[2] = 95;
@@ -30,6 +32,7 @@ public class Methods {
         int marks[] = { 14, 12, 45, 78, 96, 25 };
         changeArray(marks); // In case of array methods take the reference
         System.out.println(marks[2]); // Arrays are mutable in java it will change the value here as well
+        System.out.println(Arrays.toString(marks));
         c1 = logic(a1, b1);
         System.out.println(c);
         System.out.println(c1);

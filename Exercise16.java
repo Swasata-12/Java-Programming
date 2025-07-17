@@ -10,10 +10,12 @@ abstract class Pen {
 }
 
 class FountainPen extends Pen {
+    @Override
     void write() {
         System.out.println("Writing....");
     }
 
+    @Override
     void refill() {
         System.out.println("Refilling...");
     }

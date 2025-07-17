@@ -4,6 +4,8 @@ public class ArrayListinJava {
     public static void main(String[] args) {
         ArrayList<Integer> l1 = new ArrayList<>();
         ArrayList<Integer> l2 = new ArrayList<>(10);
+        ArrayList<Integer> l3 = new ArrayList<>(5);
+        Scanner sc = new Scanner(System.in);
         l2.add(5);
         l2.add(1);
         l2.add(8);
@@ -28,5 +30,16 @@ public class ArrayListinJava {
         for (int i = 0; i < l1.size(); i++) {
             System.out.println(l1.get(i));
         }
+
+        // Taking input to an arraylist from user
+        System.out.println("Enter element to the Arraylist of size 5: ");
+        for (int i = 0; i < 5; i++) {
+            l3.add(sc.nextInt());
+        }
+        for (int i = 0; i < l3.size(); i++) {
+            System.out.println(l3.get(i));
+        }
+        System.out.println(l3);
+        sc.close();
     }
 }

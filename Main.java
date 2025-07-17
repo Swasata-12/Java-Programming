@@ -5,5 +5,7 @@ public class Main {
         System.out.println("Hello World");
         System.out.println("The sum is: " + (4 + 3));
         System.out.println("The age is: " + age);
+        System.out.println(6);
+        System.out.println("56");
     }
 }
