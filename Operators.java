@@ -9,6 +9,10 @@ public class Operators {
         e = a * b;
         f = a / b;
         g = a % b;
+        float num1 = 1.5f;
+        float num2 = 2.5f;
+        double result = num1 * num2;
+        System.out.println("The result is: " + result);
         System.out.println("The sum is: " + c);
         System.out.println("The substraction is: " + d);
         System.out.println("The multiplication is: " + e);
