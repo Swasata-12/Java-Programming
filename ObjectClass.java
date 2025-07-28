@@ -16,5 +16,6 @@ public class ObjectClass {
         System.out.println(obj1); // it actually call obj.toString() method in the background
         System.out.println(obj1.toString());
         System.out.println(obj1.equals(obj2));
+        System.out.println(obj1.hashCode());
     }
 }
