@@ -17,10 +17,14 @@ public class HashTableinJava {
         table.put(10, "Riddha");
         System.out.println(table);
         System.out.println("The value at key 47 is: " + table.get(47));
+        System.out.println("The key 10 eist?: " + table.containsKey(10));
+        System.out.println("The value Ankit exist?: " + table.containsValue("Ankit"));
         System.out.println(table.keySet());
         System.out.println(table.values());
         for (Map.Entry<Integer, String> entry : table.entrySet()) {
             System.out.println(entry.getKey() + ":" + entry.getValue().toUpperCase());
         }
+        table.remove(47);
+        System.out.println(table);
     }
 }

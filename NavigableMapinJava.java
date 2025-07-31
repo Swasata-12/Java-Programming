@@ -6,9 +6,9 @@ import java.util.TreeMap;
 public class NavigableMapinJava {
     public static void main(String[] args) {
         NavigableMap<Integer, String> map = new TreeMap<>();
-        map.put(1, "One");
         map.put(2, "Two");
         map.put(3, "Three");
+        map.put(1, "One");
         System.out.println(map);
         System.out.println("The first element of the map is: " + map.firstEntry());
         System.out.println("The last element of the map is: " + map.lastEntry());
