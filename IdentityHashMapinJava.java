@@ -12,6 +12,10 @@ public class IdentityHashMapinJava {
         IdentityHashMap<String, Integer> map = new IdentityHashMap<>();
         map.put(key1, 1);
         map.put(key2, 2);
+        System.out.println("The IdentityHashcode of key1: " + System.identityHashCode(key1));
+        System.out.println("The IdentityHashcode of key2: " + System.identityHashCode(key2));
+        System.out.println("Hashcode of key1 using String class: " + key1.hashCode());
+        System.out.println("Hashcode of key2 using String class: " + key2.hashCode());
         System.out.println(map);
         System.out.println("The size of the Identity Hash map is: " + map.size());// return 2
     }

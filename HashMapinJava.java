@@ -34,6 +34,7 @@ public class HashMapinJava {
         System.out.println("Hashmap size: " + map1.size());
         System.out.println("Value of p1: " + map1.get(p1));
         System.out.println("Value of p3: " + map1.get(p3));
+        System.out.println(map1);
         map.put(31, "Aman");
         map.put(24, "Ankit"); // Time complexity = O(1)
         map.put(37, "Rupam");
