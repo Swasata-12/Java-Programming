@@ -17,7 +17,6 @@ public class Exercise7 {
             }
         }
         if (!isFound) {
-
             System.out.println("Your element is not present in the array");
         }
         sc.close();
