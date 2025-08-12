@@ -15,6 +15,8 @@ public class LinkedListinJava {
         list.addFirst(10); // O(1)
         list.add(1, 102);
         list.remove(0);
+        list.removeFirst();
+        list.removeLast();
         System.out.println(list);
         System.out.println("The first node of the list is: " + list.getFirst());
         System.out.println("The last node of the list is: " + list.getLast());
