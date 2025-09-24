@@ -15,6 +15,22 @@ public class Variables {
         b = (byte) a;
         float f = 5.6f;
         int x = (int) f; // in x we get only 5
+        char letter1 = 'a';
+        char letter2 = 'b';
+        // preincrement and postincrement
+        int a1 = 10;
+        int b1 = ++a1;// 11
+        System.out.println(a1);// 11
+        System.out.println(b1);// 11
+        int a2 = 10;
+        int b2 = a2++;// 10
+        System.out.println(a2);// 11
+        System.out.println(b2);// 10
+        // Type promotion in expressions
+        System.out.println((int) (letter1));
+        System.out.println((int) (letter2));
+        System.out.println(letter1 + letter2); // here we get 195 because it adds the ascii values of a and b
+        System.out.println(letter2 - letter1); // here we get 1 because it subtracts the ascii values of a and b
         System.out.println(name);
         System.out.println(name1);
         System.out.println(count);

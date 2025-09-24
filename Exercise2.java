@@ -47,8 +47,66 @@ public class Exercise2 {
         int a1 = sc.nextInt();
         int b1 = sc.nextInt();
         int c1 = sc.nextInt();
+        if (a1 >= b1 && a1 >= c1) {
+            System.out.println("The Largest number is: " + a1);
+        } else if (b1 >= c1) {
+            System.out.println("The Largest number is: " + b1);
+        } else {
+            System.out.println("The Largest number is: " + c1);
+        }
         int maximum = Math.max(c1, Math.max(a1, b1));
         System.out.println("The Largest number is: " + maximum);
+
+        // Write a Java program to calculate the total cost of your shopping cart. Ask
+        // the user to enter the price of three items they are buying and the program
+        // gives the total cost including tax (assume tax is 18% of the total cost)
+        System.out.println("Enter the price of pencil: ");
+        float pencil = sc.nextFloat();
+        System.out.println("Enter the price of pen: ");
+        float pen = sc.nextFloat();
+        System.out.println("Enter the price of eraser: ");
+        float eraser = sc.nextFloat();
+        float total = pencil + pen + eraser + (0.18f * (pencil + pen + eraser));
+        System.out.println("The total cost including tax is: " + total);
+
+        // Write a Java program to check whether a number entered by the user is prime
+        System.out.println("Enter the number to check if it is prime or not: ");
+        int number = sc.nextInt();
+        boolean isPrime = true;
+        for (int i = 2; i <= number / 2; i++) {
+            if (number % i == 0) {
+                System.out.println("The number is not prime");
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime) {
+            System.out.println("The number is prime");
+        }
+
+        // Write a Java program to keep taking numbers as input from the user until
+        // the user enters a multiple of 10 (10, 20, 30, ...).
+        while (true) {
+            System.out.println("Enter a number: ");
+            int userInput = sc.nextInt();
+            if (userInput % 10 == 0) {
+                break;
+            }
+            System.out.println("You entered: " + userInput);
+        }
+
+        // Write a Java program to keep taking numbers as input from the user and skip
+        // the number if it is a multiple of 10 (10, 20, 30, ...).
+        int count = 0;
+        while (count <= 10) {
+            System.out.println("Enter a number: ");
+            int userInput2 = sc.nextInt();
+            if (userInput2 % 10 == 0) {
+                continue;
+            }
+            System.out.println("You entered: " + userInput2);
+            count++;
+        }
         sc.close();
     }
 }
