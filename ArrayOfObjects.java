@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 class Student {
     int id;
     String name;
@@ -5,6 +7,10 @@ class Student {
     public Student(int a, String b) {
         id = a;
         name = b;
+    }
+
+    public String toString() {
+        return this.id + " " + this.name;
     }
 
     void display() {
@@ -30,5 +36,6 @@ public class ArrayOfObjects {
         for (int i = 0; i < s.length; i++) {
             s[i].display();
         }
+        System.out.println(Arrays.toString(s)); // prints hashcode
     }
 }
