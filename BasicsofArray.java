@@ -102,6 +102,10 @@ public class BasicsofArray {
             }
             System.out.println("");
         }
+
+        for (int[] row : values) {
+            System.out.println(Arrays.toString(row));
+        }
         sc.close();
     }
 }
