@@ -1,5 +1,4 @@
 public class Main {
-
     public static void main(String[] args) {
         int age = 12;
         System.out.println("Hello World");
@@ -7,5 +6,6 @@ public class Main {
         System.out.println("The age is: " + age);
         System.out.println(6);
         System.out.println("56");
+        System.out.print("I \nam \nlearning \nJava"); 
     }
 }
